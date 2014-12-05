@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FF749027-5E3E-47E5-B6C9-25A68875BDFF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ConsoleApplication4</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>C:\Program Files %28x86%29\ImageMagick-6.9.0-Q16;C:\Users\sirus20x6\Documents\Visual Studio 2013\mylibs\ImageMagick-6.8.8\VisualMagick\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\sirus20x6\Documents\Visual Studio 2013\mylibs\boost32;C:\Users\sirus20x6\Documents\Visual Studio 2013\mylibs\tesseract-3.01\vs2010\include\leptonica;C:\Users\sirus20x6\Documents\Visual Studio 2013\mylibs\tesseract-3.01\ccmain;C:\Users\sirus20x6\Documents\Visual Studio 2013\mylibs\tesseract-3.01\ccutil;C:\Users\sirus20x6\Documents\Visual Studio 2013\mylibs\tesseract-3.01\ccstruct;C:\Users\sirus20x6\Documents\Visual Studio 2013\mylibs\tesseract-3.01\api;C:\Users\sirus\Documents\Visual Studio 2013\mylibs\ImageMagick-6.8.8;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\sirus20x6\Documents\Visual Studio 2013\Projects\ConsoleApplication4\ConsoleApplication4\externals\tesseract-3.01;C:\Users\sirus20x6\Documents\Visual Studio 2013\Projects\ConsoleApplication4\ConsoleApplication4\externals\ImageMagick-6.8.8;C:\Users\sirus20x6\Documents\Visual Studio 2013\Projects\ConsoleApplication4\ConsoleApplication4\externals\leptonica-1.68;C:\Users\sirus20x6\Documents\Visual Studio 2013\Projects\ConsoleApplication4\ConsoleApplication4\externals\boost32;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\sirus20x6\Documents\Visual Studio 2013\Projects\ConsoleApplication4\ConsoleApplication4\externals;C:\Users\sirus20x6\Documents\Visual Studio 2013\Projects\ConsoleApplication4\ConsoleApplication4\externals\tesseract-3.01\vs2010\Release;C:\Users\sirus20x6\Documents\Visual Studio 2013\Projects\ConsoleApplication4\ConsoleApplication4\externals\ImageMagick-6.8.8;C:\Users\sirus20x6\Documents\Visual Studio 2013\Projects\ConsoleApplication4\ConsoleApplication4\externals\ImageMagick-6.8.8\VisualMagick\lib;C:\Users\sirus20x6\Documents\Visual Studio 2013\Projects\ConsoleApplication4\ConsoleApplication4\externals\boost32\lib32-msvc-12.0;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>CORE_RL_bzlib_.dll;CORE_RL_jbig_.dll;CORE_RL_jp2_.dll;CORE_RL_jpeg_.dll;CORE_RL_lcms_.dll;CORE_RL_magick_.dll;CORE_RL_png_.dll;CORE_RL_tiff_.dll;CORE_RL_ttf_.dll;CORE_RL_wand_.dll;CORE_RL_zlib_.dll;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;WIN32;_VISUALC_;NeedFunctionPrototypes;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libtesseract302.lib;liblept168-static-mtdll.lib;giflib416-static-mtdll.lib;libjpeg8c-static-mtdll.lib;libpng143-static-mtdll.lib;libtiff394-static-mtdll.lib;zlib125-static-mtdll.lib;CORE_DB_bzlib_.lib;CORE_DB_cairo_.lib;CORE_DB_croco_.lib;CORE_DB_ffi_.lib;CORE_DB_filters_.lib;CORE_DB_glib_.lib;CORE_DB_jbig_.lib;CORE_DB_jp2_.lib;CORE_DB_jpeg_.lib;CORE_DB_lcms_.lib;CORE_DB_librsvg_.lib;CORE_DB_libxml_.lib;CORE_DB_lqr_.lib;CORE_DB_magick_.lib;CORE_DB_openjpeg_.lib;CORE_DB_pango_.lib;CORE_DB_pixman_.lib;CORE_DB_png_.lib;CORE_DB_tiff_.lib;CORE_DB_ttf_.lib;CORE_DB_wand_.lib;CORE_DB_webp_.lib;CORE_DB_zlib_.lib;CORE_RL_bzlib_.lib;CORE_RL_cairo_.lib;CORE_RL_croco_.lib;CORE_RL_ffi_.lib;CORE_RL_filters_.lib;CORE_RL_glib_.lib;CORE_RL_jbig_.lib;CORE_RL_jp2_.lib;CORE_RL_jpeg_.lib;CORE_RL_lcms_.lib;CORE_RL_librsvg_.lib;CORE_RL_libxml_.lib;CORE_RL_lqr_.lib;CORE_RL_Magick++_.lib;CORE_RL_magick_.lib;CORE_RL_openjpeg_.lib;CORE_RL_pango_.lib;CORE_RL_pixman_.lib;CORE_RL_png_.lib;CORE_RL_tiff_.lib;CORE_RL_ttf_.lib;CORE_RL_wand_.lib;CORE_RL_webp_.lib;CORE_RL_zlib_.lib;CORE_RL_coders_.lib;CORE_DB_coders_.lib;X11.lib;Xext.lib;Urlmon.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;MSVCRT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ERNIE.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="eveInputWrapper.h" />
+    <ClInclude Include="inputSimulator.h" />
+    <ClInclude Include="OCR.h" />
+    <ClInclude Include="pixel.h" />
+    <ClInclude Include="speech.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
